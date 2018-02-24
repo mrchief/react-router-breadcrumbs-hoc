@@ -31,8 +31,6 @@ export const getBreadcrumbs = ({ routes, pathname }) => {
   const matches = [];
 
   pathname
-    // remove trailing slash "/" from pathname (avoids multiple of the same match)
-    // .replace(/\/$/, '')
     // split pathname into sections
     .split('/')
     // reduce over the sections and find matches from `routes` prop
